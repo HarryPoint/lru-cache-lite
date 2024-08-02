@@ -1,6 +1,6 @@
 {
   "name": "lru-cache-lite",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/lur-cache-lite.js",
   "scripts": {
