@@ -7,9 +7,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "lru-cache",
+      name: "lru-cache-lite",
       // the proper extensions will be added
-      fileName: "lru-cache",
+      fileName: "lru-cache-lite",
     },
   },
 });

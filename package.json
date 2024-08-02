@@ -7,11 +7,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "repository": "git+https://github.com/HarryPoint/lru-cache.git",
+  "repository": "git+https://github.com/HarryPoint/lru-cache-lite.git",
   "bugs": {
-    "url": "https://github.com/HarryPoint/lru-cache/issues"
+    "url": "https://github.com/HarryPoint/lru-cache-lite/issues"
   },
-  "homepage": "https://github.com/HarryPoint/lru-cache#readme",
+  "homepage": "https://github.com/HarryPoint/lru-cache-lite#readme",
   "keywords": [
     "LRU",
     "lru",
