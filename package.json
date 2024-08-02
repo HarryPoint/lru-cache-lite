@@ -1,6 +1,5 @@
 {
   "name": "lru-cache",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,6 +7,23 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "repository": "git+https://github.com/HarryPoint/lru-cache.git",
+  "bugs": {
+    "url": "https://github.com/HarryPoint/lru-cache/issues"
+  },
+  "homepage": "https://github.com/HarryPoint/lru-cache#readme",
+  "keywords": [
+    "LRU",
+    "lru",
+    "cache"
+  ],
+  "author": "harry",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md"
+  ],
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
