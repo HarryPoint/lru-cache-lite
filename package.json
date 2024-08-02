@@ -2,7 +2,7 @@
   "name": "lru-cache-lite",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/lur-cache-lite.js",
+  "main": "dist/lru-cache-lite.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
