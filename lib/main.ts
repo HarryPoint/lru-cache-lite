@@ -1,25 +1,20 @@
 class LRUCacheLite {
-  #length;
-  #cache;
+  #length: number;
+  #cache: Map<any, any>;
   constructor(length = 10) {
     this.#length = length;
     this.#cache = new Map<any, any>();
-    this.clearCacheLoop();
   }
 
-  clearCacheLoop() {
-    this.#cache.forEach((value: any, key: any) => {
-      const [, timeSamp] = value;
-      if (Date.now() > timeSamp) {
-        this.#cache.delete(key);
-      }
-    });
-    requestAnimationFrame(() => {
-      this.clearCacheLoop();
-    });
+  expireTimeCheck(key: any) {
+    const [, timeSamp] = this.#cache.get(key);
+    if (Date.now() > timeSamp) {
+      this.#cache.delete(key);
+    }
   }
 
   get(key: any) {
+    this.expireTimeCheck(key);
     if (!this.#cache.has(key)) {
       return;
     }

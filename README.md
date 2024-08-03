@@ -34,10 +34,6 @@ cacheIns.set('demo', 'demo-value', 10)
 cacheIns.get('demo') // 'demo-value'
 ```
 
-### ⚠️Note
-
-Currently only compatible with the browser
-
 ### Recommended Use Cases
 
 1. Front-end API interface caching

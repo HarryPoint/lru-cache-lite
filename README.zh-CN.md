@@ -34,10 +34,6 @@ cacheIns.set('demo', 'demo-value', 10)
 cacheIns.get('demo') // 'demo-value'
 ```
 
-### ⚠️注意
-
-目前只兼容了浏览器端
-
 ### 建议使用场景
 
 1. 前端做接口缓存
