@@ -2,7 +2,19 @@
   "name": "lru-cache-lite",
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/lru-cache-lite.js",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "main": "./dist/lru-cache-lite.umd.cjs",
+  "module": "./dist/lru-cache-lite.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lru-cache-lite.js",
+      "require": "./dist/lru-cache-lite.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -20,11 +32,6 @@
   ],
   "author": "harry",
   "license": "MIT",
-  "files": [
-    "dist",
-    "README.md",
-    "README.zh-CN.md"
-  ],
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
