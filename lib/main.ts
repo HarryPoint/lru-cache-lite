@@ -1,14 +1,14 @@
-class LRUCache {
+class LRUCacheLite {
   #length;
   #cache;
   constructor(length = 10) {
     this.#length = length;
-    this.#cache = new Map();
+    this.#cache = new Map<any, any>();
     this.clearCacheLoop();
   }
 
   clearCacheLoop() {
-    this.#cache.forEach((value, key) => {
+    this.#cache.forEach((value: any, key: any) => {
       const [, timeSamp] = value;
       if (Date.now() > timeSamp) {
         this.#cache.delete(key);
@@ -19,7 +19,7 @@ class LRUCache {
     });
   }
 
-  get(key) {
+  get(key: any) {
     if (!this.#cache.has(key)) {
       return;
     }
@@ -29,7 +29,7 @@ class LRUCache {
     return value;
   }
 
-  set(key, value, expireTime = 60) {
+  set(key: any, value: any, expireTime = 60) {
     if (this.#cache.has(key)) {
       this.#cache.delete(key);
     }
@@ -40,4 +40,4 @@ class LRUCache {
   }
 }
 
-export default LRUCache;
+export default LRUCacheLite;
