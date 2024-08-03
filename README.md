@@ -27,11 +27,19 @@ const cacheIns = new LRUCacheLite(10); // Specify the cache size as 10
 step2: Set or read the cache
 
 ```javascript
-// Set cache with set(key, value, expireTime)
+// Set cache with set(key, value, expireTime（seconds）) 
 cacheIns.set('demo', 'demo-value', 10)
 
 // Read cache
 cacheIns.get('demo') // 'demo-value'
+
+const objKey = {};
+
+const objValue = {};
+
+cacheIns.set(objKey, objValue)
+
+console.log(objValue === cacheIns.get(objKey)) // true
 ```
 
 ### Recommended Use Cases

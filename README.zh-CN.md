@@ -27,11 +27,19 @@ const cacheIns = new LRUCacheLite(10); // 指定缓存数量为10
 step2: 设置缓存或读取缓存
 
 ```javascript
-// 设置缓存 set(key, value, expireTime), 
+// 设置缓存 set(key, value, expireTime(秒) ), 
 cacheIns.set('demo', 'demo-value', 10)
 
 // 读取缓存
 cacheIns.get('demo') // 'demo-value'
+
+const objKey = {};
+
+const objValue = {};
+
+cacheIns.set(objKey, objValue)
+
+console.log(objValue === cacheIns.get(objKey)) // true
 ```
 
 ### 建议使用场景
