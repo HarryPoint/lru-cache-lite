@@ -4,6 +4,9 @@ A mini LRU implementation library. If you have lightweight LRU needs, we recomme
 
 [![NPM][npm-version-image]][npm-version-url]
 
+[npm-version-image]: https://img.shields.io/npm/v/plk-api2ts.svg?style=flat-square
+[npm-version-url]: https://www.npmjs.com/package/lru-cache-lite
+
 English | [简体中文](./README.zh-CN.md)
 
 ### Features
