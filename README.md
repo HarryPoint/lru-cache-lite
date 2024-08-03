@@ -4,6 +4,8 @@ A mini LRU implementation library. If you have lightweight LRU needs, we recomme
 
 [![NPM][npm-version-image]][npm-version-url]
 
+English | [简体中文](./README.zh-CN.md)
+
 ### Features
 
 1. Supports setting the number of cache entries

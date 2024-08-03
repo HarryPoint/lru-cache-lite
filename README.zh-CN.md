@@ -4,6 +4,8 @@
 
 [![NPM][npm-version-image]][npm-version-url]
 
+[English](./README.md) | 简体中文
+
 ### 功能
 
 1. 支持设置缓存内容数量
